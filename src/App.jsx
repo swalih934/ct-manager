@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 import Landing from './pages/Landing'
@@ -8,9 +7,10 @@ import { Route,Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './bootstrap.min.css'
+import 'react-toastify/dist/ReactToastify.css';
 
+import { ToastContainer } from 'react-toastify'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
 
      </Routes>
      <Footer/>
+     <ToastContainer/>
     </>
   )
 }
